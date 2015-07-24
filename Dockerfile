@@ -1,4 +1,4 @@
-FROM sunyi00/centos:latest
+FROM sunyi00/centos:lain
 
 RUN yum -y update \
     && yum -y install epel-release \
