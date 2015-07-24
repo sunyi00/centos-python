@@ -1,10 +1,8 @@
-FROM sunyi00/centos:lain
+FROM sunyi00/centos:1.0.0
 
-RUN yum -y update \
-    && yum -y install epel-release \
-    && yum -y install gcc \
-    libevent-devel\
-    python-backports-lzma \
-    python-devel \
-    python-pip && \
-    yum -y clean all
+RUN yum -y install \
+        libevent-devel \
+        python-backports-lzma \
+        python-devel \
+        python-pip \
+    && yum -y clean all
